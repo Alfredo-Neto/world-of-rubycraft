@@ -1,1 +1,128 @@
-[{"nome":"Altharian","classe":"Paladino"},{"nome":"lalalalala","classe":"lalalalalallalalal"}]
+[
+    {
+        "nome": "Hogger",
+        "classe": "Inimigo",
+        "atributos": {
+            "vidaMaxima": 100,
+            "vida": 100
+        },
+        "ataques": [
+            {
+                "nome": "soco de massa infinita",
+                "dano": 10
+            },
+            {
+                "nome": "soco de massa finita",
+                "dano": 2
+            }
+        ]
+    },
+    {
+        "nome": "Demossauro",
+        "classe": "Inimigo",
+        "atributos": {
+            "vidaMaxima": 100,
+            "vida": 100
+        },
+        "ataques": [
+            {
+                "nome": "soco de massa infinita",
+                "dano": 10
+            },
+            {
+                "nome": "soco de massa finita",
+                "dano": 2
+            }
+        ]
+    },
+    {
+        "nome": "Onyxia",
+        "classe": "Inimigo",
+        "atributos": {
+            "vidaMaxima": 100,
+            "vida": 100
+        },
+        "ataques": [
+            {
+                "nome": "soco de massa infinita",
+                "dano": 10
+            },
+            {
+                "nome": "soco de massa finita",
+                "dano": 2
+            }
+        ]
+    },
+    {
+        "nome": "Lich Rei",
+        "classe": "Inimigo Final",
+        "atributos": {
+            "vidaMaxima": 100,
+            "vida": 100
+        },
+        "ataques": [
+            {
+                "nome": "soco de massa infinita",
+                "dano": 10
+            },
+            {
+                "nome": "soco de massa finita",
+                "dano": 2
+            }
+        ]
+    },
+    {
+        "nome": "DinhoMaximus",
+        "classe": "Trovador",
+        "atributos": {
+            "vidaMaxima": 100,
+            "vida": 100
+        },
+        "ataques": [
+            {
+                "nome": "soco de massa infinita",
+                "dano": 10
+            },
+            {
+                "nome": "soco de massa finita",
+                "dano": 2
+            }
+        ]
+    },
+    {
+        "nome": "Thrall",
+        "classe": "fodao",
+        "atributos": {
+            "vidaMaxima": 100,
+            "vida": 100
+        },
+        "ataques": [
+            {
+                "nome": "soco de massa infinita",
+                "dano": 10
+            },
+            {
+                "nome": "soco de massa finita",
+                "dano": 2
+            }
+        ]
+    },
+    {
+        "nome": "Anduin",
+        "classe": "SacerdotinhoGuerreiro",
+        "atributos": {
+            "vidaMaxima": 100,
+            "vida": 100
+        },
+        "ataques": [
+            {
+                "nome": "soco de massa infinita",
+                "dano": 10
+            },
+            {
+                "nome": "soco de massa finita",
+                "dano": 2
+            }
+        ]
+    }
+]
