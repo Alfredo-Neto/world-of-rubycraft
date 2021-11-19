@@ -13,7 +13,7 @@ class CharacterService
 
     def getOne(nome)
         characterList = getAll()
-        characterList.each_with_index do |character, index|
+        characterList.each do |character|
             if character["nome"] == nome
                 return character
             end 
@@ -63,6 +63,12 @@ class CharacterService
             "ataques" => ataques
         }
         return character
+    end
+
+    def listCharacters(characters)
+        characters.each_with_index do |character, index|
+            puts "#{index += 1} - #{character["nome"]}"
+        end
     end
 
     def  listAttributes(character)

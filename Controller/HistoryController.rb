@@ -33,16 +33,10 @@ class HistoryController
        charactersMenu(characters)
     end
 
-    def listCharacters(characters)
-        characters.each_with_index do |character, index|
-            puts "#{index += 1} - #{character["nome"]}"
-        end
-    end
-
     def charactersMenu(characters)
         while 1
             puts "Pressione um número para escolher um personagem:"
-            listCharacters(characters)
+            @characterService.listCharacters(characters)
             opcao = gets.chomp
             nome = characters[opcao.to_i - 1]["nome"]
 
