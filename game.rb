@@ -19,6 +19,7 @@ while menu
         character.createCharacter()
     when 2
         history.historyMode()
+        return
     when 0
         return
     else

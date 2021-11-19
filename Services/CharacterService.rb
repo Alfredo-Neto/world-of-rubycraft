@@ -64,4 +64,21 @@ class CharacterService
         }
         return character
     end
+
+    def  listAttributes(character)
+        puts
+        puts "Dados do personagem:"
+        puts "Nome: #{character["nome"]}"
+        puts "Classe: #{character["classe"]}"
+        puts "Atributos:"
+        puts "  Vida máxima: #{character["atributos"]["vidaMaxima"]}"
+        puts "  Vida: #{character["atributos"]["vida"]}"
+        puts "Ataques:"
+        
+        ataques = character["ataques"]
+        ataques.each do |ataque|
+            puts "  Nome: #{ataque["nome"]}, Dano: #{ataque["dano"]}"
+        end
+        puts
+    end
 end
