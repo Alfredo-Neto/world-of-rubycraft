@@ -54,8 +54,8 @@ class CharacterService
     end
 
     def buildDefaultCharacter(nome, classe)
-        atributos = defaultAtributos
-        ataques = defaultAtaques
+        atributos = defaultAtributos()
+        ataques = defaultAtaques()
         character = {
             "nome" => nome,
             "classe" => classe,

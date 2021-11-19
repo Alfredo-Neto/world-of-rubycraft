@@ -124,5 +124,23 @@
                 "dano": 2
             }
         ]
+    },
+    {
+        "nome": "Superman",
+        "classe": "Alien",
+        "atributos": {
+            "vidaMaxima": 100,
+            "vida": 100
+        },
+        "ataques": [
+            {
+                "nome": "soco de massa infinita",
+                "dano": 10
+            },
+            {
+                "nome": "soco de massa finita",
+                "dano": 2
+            }
+        ]
     }
 ]
