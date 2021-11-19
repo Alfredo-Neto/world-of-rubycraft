@@ -38,9 +38,8 @@ class HistoryController
             puts "Pressione um número para escolher um personagem:"
             @characterService.listCharacters(characters)
             opcao = gets.chomp
-            nome = characters[opcao.to_i - 1]["nome"]
-
-            if (opcao.to_i > 0)
+            if (opcao.to_i > 0 && opcao.to_i <= characters.length)
+                nome = characters[opcao.to_i - 1]["nome"]
                 character = @characterService.getOne(nome)
                 @characterService.listAttributes(character)
                 break
