@@ -21,9 +21,54 @@
 
 # se morreu - fala que morreu
 # se terminou a história, estoura um champanhe
+require_relative '../Services/CharacterService'
 
 class HistoryController
+    def initialize
+        @characterService = CharacterService.new
+    end
+
     def historyMode()
+       characters = @characterService.getAll()
+       charactersMenu(characters)
+    end
+
+    def listCharacters(characters)
+        characters.each_with_index do |character, index|
+            puts "#{index += 1} - #{character["nome"]}"
+        end
+    end
+
+    def charactersMenu(characters)
+        while 1
+            puts "Pressione um número para escolher um personagem:"
+            listCharacters(characters)
+            opcao = gets.chomp
+            nome = characters[opcao.to_i - 1]["nome"]
+
+            if (opcao.to_i > 0)
+                character = @characterService.getOne(nome)
+                listAttributes(character)
+            else
+                puts "Opção inválida!"
+            end
+        end
+    end
+
+    def  listAttributes(character)
+        puts
+        puts "Dados do personagem:"
+        puts "Nome: #{character["nome"]}"
+        puts "Classe: #{character["classe"]}"
+        puts "Atributos:"
+        puts "  Vida máxima: #{character["atributos"]["vidaMaxima"]}"
+        puts "  Vida: #{character["atributos"]["vida"]}"
+        puts "Ataques:"
         
+        ataques = character["ataques"]
+        ataques.each do |ataque|
+            puts "  Nome: #{ataque["nome"]}, Dano: #{ataque["dano"]}"
+        end
+        puts
     end
 end

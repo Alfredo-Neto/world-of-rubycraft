@@ -11,8 +11,13 @@ class CharacterService
         return characterList
     end
 
-    def getOne (nome)
-        #filtrar personagem por nome e retornar
+    def getOne(nome)
+        characterList = getAll()
+        characterList.each_with_index do |character, index|
+            if character["nome"] == nome
+                return character
+            end 
+        end
     end
 
     def create (character)
