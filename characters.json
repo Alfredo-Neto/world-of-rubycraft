@@ -3,16 +3,12 @@
         "nome": "Hogger",
         "classe": "Inimigo",
         "atributos": {
-            "vidaMaxima": 100,
-            "vida": 100
+            "vidaMaxima": 20,
+            "vida": 20
         },
         "ataques": [
             {
-                "nome": "soco de massa infinita",
-                "dano": 10
-            },
-            {
-                "nome": "soco de massa finita",
+                "nome": "te bateu",
                 "dano": 2
             }
         ]
@@ -21,17 +17,13 @@
         "nome": "Demossauro",
         "classe": "Inimigo",
         "atributos": {
-            "vidaMaxima": 100,
-            "vida": 100
+            "vidaMaxima": 60,
+            "vida": 60
         },
         "ataques": [
             {
-                "nome": "soco de massa infinita",
-                "dano": 10
-            },
-            {
-                "nome": "soco de massa finita",
-                "dano": 2
+                "nome": "da rabada",
+                "dano": 8
             }
         ]
     },
@@ -39,17 +31,13 @@
         "nome": "Onyxia",
         "classe": "Inimigo",
         "atributos": {
-            "vidaMaxima": 100,
+            "vidaMaxima": 200,
             "vida": 100
         },
         "ataques": [
             {
-                "nome": "soco de massa infinita",
-                "dano": 10
-            },
-            {
-                "nome": "soco de massa finita",
-                "dano": 2
+                "nome": "foguinho pela boca",
+                "dano": 4
             }
         ]
     },
@@ -62,12 +50,50 @@
         },
         "ataques": [
             {
-                "nome": "soco de massa infinita",
+                "nome": "frostmourne chupa-alma",
                 "dano": 10
-            },
+            }
+        ]
+    },
+    {
+        "nome": "Thrall",
+        "classe": "fodao",
+        "atributos": {
+            "vidaMaxima": 100,
+            "vida": 100
+        },
+        "ataques": [
             {
-                "nome": "soco de massa finita",
+                "nome": "conversinha no jutsu",
                 "dano": 2
+            }
+        ]
+    },
+    {
+        "nome": "Anduin",
+        "classe": "SacerdotinhoGuerreiro",
+        "atributos": {
+            "vidaMaxima": 100,
+            "vida": 100
+        },
+        "ataques": [
+            {
+                "nome": "curar",
+                "dano": -10
+            }
+        ]
+    },
+    {
+        "nome": "Superman",
+        "classe": "Alien",
+        "atributos": {
+            "vidaMaxima": 1000,
+            "vida": 1000
+        },
+        "ataques": [
+            {
+                "nome": "largou o foda-se",
+                "dano": 50
             }
         ]
     },
@@ -84,62 +110,8 @@
                 "dano": 10
             },
             {
-                "nome": "soco de massa finita",
-                "dano": 2
-            }
-        ]
-    },
-    {
-        "nome": "Thrall",
-        "classe": "fodao",
-        "atributos": {
-            "vidaMaxima": 100,
-            "vida": 100
-        },
-        "ataques": [
-            {
-                "nome": "soco de massa infinita",
-                "dano": 10
-            },
-            {
-                "nome": "soco de massa finita",
-                "dano": 2
-            }
-        ]
-    },
-    {
-        "nome": "Anduin",
-        "classe": "SacerdotinhoGuerreiro",
-        "atributos": {
-            "vidaMaxima": 100,
-            "vida": 100
-        },
-        "ataques": [
-            {
-                "nome": "soco de massa infinita",
-                "dano": 10
-            },
-            {
-                "nome": "soco de massa finita",
-                "dano": 2
-            }
-        ]
-    },
-    {
-        "nome": "Superman",
-        "classe": "Alien",
-        "atributos": {
-            "vidaMaxima": 100,
-            "vida": 100
-        },
-        "ataques": [
-            {
-                "nome": "soco de massa infinita",
-                "dano": 10
-            },
-            {
-                "nome": "soco de massa finita",
-                "dano": 2
+                "nome": "detroit smasher",
+                "dano": 5
             }
         ]
     }

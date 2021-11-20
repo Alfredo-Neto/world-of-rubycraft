@@ -64,27 +64,4 @@ class CharacterService
         }
         return character
     end
-
-    def listCharacters(characters)
-        characters.each_with_index do |character, index|
-            puts "#{index += 1} - #{character["nome"]}"
-        end
-    end
-
-    def  listAttributes(character)
-        puts
-        puts "Dados do personagem:"
-        puts "Nome: #{character["nome"]}"
-        puts "Classe: #{character["classe"]}"
-        puts "Atributos:"
-        puts "  Vida máxima: #{character["atributos"]["vidaMaxima"]}"
-        puts "  Vida: #{character["atributos"]["vida"]}"
-        puts "Ataques:"
-        
-        ataques = character["ataques"]
-        ataques.each do |ataque|
-            puts "  Nome: #{ataque["nome"]}, Dano: #{ataque["dano"]}"
-        end
-        puts
-    end
 end
