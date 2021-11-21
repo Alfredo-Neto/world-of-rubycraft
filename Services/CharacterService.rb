@@ -1,4 +1,7 @@
+require_relative '../Entity/Personagem'
+
 class CharacterService
+    #deixar de retornar um array de hashes e passar a retornar um array de objetos Personagem
     def getAll ()
         file = File.open("characters.json")
         characterList = file.read()
@@ -8,7 +11,17 @@ class CharacterService
             characterList = []
         end
         file.close()
-        return characterList
+
+        personagensArray = []
+        characterList.each do |character|
+            personagem = Personagem.new
+            personagem.nome = character["nome"]
+            personagem.classe = character["classe"]
+            personagem.atributos = character["atributos"]
+            personagem.ataques = character["ataques"]
+            personagensArray.push(personagem)
+        end
+        return personagensArray
     end
 
     def getOne(nome)
@@ -23,6 +36,7 @@ class CharacterService
     def create (character)
         characterList = getAll()
         characterList.push(character)
+        puts characterList.inspect
         saveJson(characterList)
     end
 
@@ -56,12 +70,11 @@ class CharacterService
     def buildDefaultCharacter(nome, classe)
         atributos = defaultAtributos()
         ataques = defaultAtaques()
-        character = {
-            "nome" => nome,
-            "classe" => classe,
-            "atributos" => atributos,
-            "ataques" => ataques
-        }
-        return character
+        personagem = Personagem.new
+        personagem.nome = nome
+        personagem.classe = classe
+        personagem.atributos = atributos
+        personagem.ataques = ataques
+        return personagem
     end
 end

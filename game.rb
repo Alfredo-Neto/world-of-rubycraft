@@ -3,26 +3,36 @@ require 'json'
 require_relative 'Controller/CharacterController'
 require_relative 'Controller/HistoryController'
 
-menu = 1
-while menu
-    character = CharacterController.new
-    history = HistoryController.new
+class Game
+    def initialMenu
+        puts "Digite um número para escolher uma opção:"
+        puts "1 - Criar personagem"
+        puts "2 - Modo história"
+        puts "0 - Sair"
+        opcao = gets.chomp.to_i
+        return opcao
+    end
 
-    puts "Digite um número para escolher uma opção:"
-    puts "1 - Criar personagem"
-    puts "2 - Modo história"
-    puts "0 - Sair"
-    opcao = gets.chomp.to_i
+    def run
+        menu = 1
+        while menu
+            character = CharacterController.new
+            history = HistoryController.new
 
-    case opcao
-    when 1
-        character.createCharacter()
-    when 2
-        history.historyMode()
-        return
-    when 0
-        return
-    else
-        puts "Opção inválida"
+            opcao = initialMenu()
+            case opcao
+            when 1
+                character.createCharacter()
+            when 2
+                history.historyMode()
+            when 0
+                return
+            else
+                puts "Opção inválida"
+            end
+        end
     end
 end
+
+game = Game.new
+game.run()
