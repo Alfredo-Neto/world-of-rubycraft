@@ -1,1 +1,196 @@
-["#<Personagem:0x000055cf25208c90>","#<Personagem:0x000055cf25208ba0>","#<Personagem:0x000055cf25208b50>","#<Personagem:0x000055cf25208b28>","#<Personagem:0x000055cf25208b00>","#<Personagem:0x000055cf25208ab0>","#<Personagem:0x000055cf252089c0>","#<Personagem:0x000055cf25208970>","#<Personagem:0x000055cf25208948>","#<Personagem:0x000055cf25211cf0>"]
+[
+    {
+        "nome": "Hogger",
+        "classe": "Inimigo",
+        "ataques": [
+            {
+                "nome": "te bateu",
+                "dano": 2
+            }
+        ],
+        "atributos": {
+            "vidaMaxima": 20,
+            "vida": 20
+        }
+    },
+    {
+        "nome": "Demossauro",
+        "classe": "Inimigo",
+        "ataques": [
+            {
+                "nome": "da rabada",
+                "dano": 8
+            }
+        ],
+        "atributos": {
+            "vidaMaxima": 60,
+            "vida": 60
+        }
+    },
+    {
+        "nome": "Onyxia",
+        "classe": "Inimigo",
+        "ataques": [
+            {
+                "nome": "foguinho pela boca",
+                "dano": 4
+            }
+        ],
+        "atributos": {
+            "vidaMaxima": 200,
+            "vida": 100
+        }
+    },
+    {
+        "nome": "Lich Rei",
+        "classe": "Inimigo Final",
+        "ataques": [
+            {
+                "nome": "frostmourne chupa-alma",
+                "dano": 10
+            }
+        ],
+        "atributos": {
+            "vidaMaxima": 100,
+            "vida": 100
+        }
+    },
+    {
+        "nome": "Thrall",
+        "classe": "fodao",
+        "ataques": [
+            {
+                "nome": "conversinha no jutsu",
+                "dano": 2
+            }
+        ],
+        "atributos": {
+            "vidaMaxima": 100,
+            "vida": 100
+        }
+    },
+    {
+        "nome": "Anduin",
+        "classe": "SacerdotinhoGuerreiro",
+        "ataques": [
+            {
+                "nome": "curar",
+                "dano": -10
+            }
+        ],
+        "atributos": {
+            "vidaMaxima": 100,
+            "vida": 100
+        }
+    },
+    {
+        "nome": "Superman",
+        "classe": "Alien",
+        "ataques": [
+            {
+                "nome": "largou o foda-se",
+                "dano": 50
+            }
+        ],
+        "atributos": {
+            "vidaMaxima": 1000,
+            "vida": 1000
+        }
+    },
+    {
+        "nome": "DinhoMaximus",
+        "classe": "Trovador",
+        "ataques": [
+            {
+                "nome": "soco de massa infinita",
+                "dano": 10
+            },
+            {
+                "nome": "detroit smasher",
+                "dano": 5
+            }
+        ],
+        "atributos": {
+            "vidaMaxima": 100,
+            "vida": 100
+        }
+    },
+    {
+        "nome": "pinkzin",
+        "classe": "dogninn",
+        "ataques": [
+            {
+                "nome": "soco de massa infinita",
+                "dano": 10
+            },
+            {
+                "nome": "soco de massa finita",
+                "dano": 2
+            }
+        ],
+        "atributos": {
+            "vidaMaxima": 100,
+            "vida": 100
+        }
+    },
+    {
+        "nome": "nome",
+        "classe": "classe",
+        "ataques": "ataques",
+        "atributos": "atributos"
+    },
+    {
+        "nome": "rui",
+        "classe": "tauren",
+        "ataques": [
+            {
+                "nome": "soco de massa infinita",
+                "dano": 10
+            },
+            {
+                "nome": "soco de massa finita",
+                "dano": 2
+            }
+        ],
+        "atributos": {
+            "vidaMaxima": 100,
+            "vida": 100
+        }
+    },
+    {
+        "nome": "Lucas",
+        "classe": "paladino",
+        "ataques": [
+            {
+                "nome": "soco de massa infinita",
+                "dano": 10
+            },
+            {
+                "nome": "soco de massa finita",
+                "dano": 2
+            }
+        ],
+        "atributos": {
+            "vidaMaxima": 100,
+            "vida": 100
+        }
+    },
+    {
+        "nome": "homem-aranha",
+        "classe": "aranha",
+        "ataques": [
+            {
+                "nome": "soco de massa infinita",
+                "dano": 10
+            },
+            {
+                "nome": "soco de massa finita",
+                "dano": 2
+            }
+        ],
+        "atributos": {
+            "vidaMaxima": 100,
+            "vida": 100
+        }
+    }
+]
