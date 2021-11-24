@@ -1,0 +1,14 @@
+SITUAÇÃO 1:
+    tinhamos uma lista de objetos
+    faziamos um to_json na lista de objetos
+    o resultado eram endereços de objetos na memoria salvos no arquivo json
+SITUAÇÃO 2:
+    tinhamos uma lista de objetos
+    ensinamos o personagem como virar json
+    salvamos um novo personagem como json na lista
+    faziamos um to_json na lista de objetos
+    o que deu certo:
+        os elementos anteriores permaneceram corretamente formatados como json
+    o que deu errado:
+        o último elemento salvo foi convertido duas vezes
+    

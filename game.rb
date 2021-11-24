@@ -6,8 +6,9 @@ require_relative 'Controller/HistoryController'
 class Game
     def initialMenu
         puts "Digite um número para escolher uma opção:"
-        puts "1 - Criar personagem"
-        puts "2 - Modo história"
+        puts "1 - Modo história"
+        puts "2 - Criar personagem"
+        puts "3 - Criar inimigo"
         puts "0 - Sair"
         opcao = gets.chomp.to_i
         return opcao
@@ -22,9 +23,11 @@ class Game
             opcao = initialMenu()
             case opcao
             when 1
-                character.createCharacter()
-            when 2
                 history.historyMode()
+            when 2
+                character.createCharacter()
+            when 3
+                character.createEnemy()
             when 0
                 return
             else

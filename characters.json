@@ -11,7 +11,8 @@
         "atributos": {
             "vidaMaxima": 20,
             "vida": 20
-        }
+        },
+        "tipo": "enemy"
     },
     {
         "nome": "Demossauro",
@@ -25,7 +26,8 @@
         "atributos": {
             "vidaMaxima": 60,
             "vida": 60
-        }
+        },
+        "tipo": "enemy"
     },
     {
         "nome": "Onyxia",
@@ -39,7 +41,8 @@
         "atributos": {
             "vidaMaxima": 200,
             "vida": 100
-        }
+        },
+        "tipo": "enemy"
     },
     {
         "nome": "Lich Rei",
@@ -53,7 +56,8 @@
         "atributos": {
             "vidaMaxima": 100,
             "vida": 100
-        }
+        },
+        "tipo": "enemy"
     },
     {
         "nome": "Thrall",
@@ -67,7 +71,8 @@
         "atributos": {
             "vidaMaxima": 100,
             "vida": 100
-        }
+        },
+        "tipo": "enemy"
     },
     {
         "nome": "Anduin",
@@ -81,7 +86,8 @@
         "atributos": {
             "vidaMaxima": 100,
             "vida": 100
-        }
+        },
+        "tipo": "enemy"
     },
     {
         "nome": "Superman",
@@ -95,7 +101,8 @@
         "atributos": {
             "vidaMaxima": 1000,
             "vida": 1000
-        }
+        },
+        "tipo": "enemy"
     },
     {
         "nome": "DinhoMaximus",
@@ -113,7 +120,8 @@
         "atributos": {
             "vidaMaxima": 100,
             "vida": 100
-        }
+        },
+        "tipo": "player"
     },
     {
         "nome": "pinkzin",
@@ -131,13 +139,8 @@
         "atributos": {
             "vidaMaxima": 100,
             "vida": 100
-        }
-    },
-    {
-        "nome": "nome",
-        "classe": "classe",
-        "ataques": "ataques",
-        "atributos": "atributos"
+        },
+        "tipo": "enemy"
     },
     {
         "nome": "rui",
@@ -155,7 +158,8 @@
         "atributos": {
             "vidaMaxima": 100,
             "vida": 100
-        }
+        },
+        "tipo": "player"
     },
     {
         "nome": "Lucas",
@@ -173,7 +177,8 @@
         "atributos": {
             "vidaMaxima": 100,
             "vida": 100
-        }
+        },
+        "tipo": "enemy"
     },
     {
         "nome": "homem-aranha",
@@ -191,6 +196,83 @@
         "atributos": {
             "vidaMaxima": 100,
             "vida": 100
-        }
+        },
+        "tipo": "enemy"
+    },
+    {
+        "nome": "socrates",
+        "classe": "filosofo",
+        "ataques": [
+            {
+                "nome": "soco de massa infinita",
+                "dano": 10
+            },
+            {
+                "nome": "soco de massa finita",
+                "dano": 2
+            }
+        ],
+        "atributos": {
+            "vidaMaxima": 100,
+            "vida": 100
+        },
+        "tipo": "enemy"
+    },
+    {
+        "nome": "gutenberg",
+        "classe": "gravador",
+        "ataques": [
+            {
+                "nome": "soco de massa infinita",
+                "dano": 10
+            },
+            {
+                "nome": "soco de massa finita",
+                "dano": 2
+            }
+        ],
+        "atributos": {
+            "vidaMaxima": 100,
+            "vida": 100
+        },
+        "tipo": "player"
+    },
+    {
+        "nome": "satanas",
+        "classe": "demonio",
+        "ataques": [
+            {
+                "nome": "soco de massa infinita",
+                "dano": 10
+            },
+            {
+                "nome": "soco de massa finita",
+                "dano": 2
+            }
+        ],
+        "atributos": {
+            "vidaMaxima": 100,
+            "vida": 100
+        },
+        "tipo": "enemy"
+    },
+    {
+        "nome": "bowser",
+        "classe": "rabada",
+        "ataques": [
+            {
+                "nome": "soco de massa infinita",
+                "dano": 10
+            },
+            {
+                "nome": "soco de massa finita",
+                "dano": 2
+            }
+        ],
+        "atributos": {
+            "vidaMaxima": 100,
+            "vida": 100
+        },
+        "tipo": "enemy"
     }
 ]

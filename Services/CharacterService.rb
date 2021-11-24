@@ -2,7 +2,7 @@ require_relative '../Entity/Personagem'
 
 class CharacterService
     #deixar de retornar um array de hashes e passar a retornar um array de objetos Personagem
-    def getAll ()
+    def getAll(filter = null)
         file = File.open("characters.json")
         characterList = file.read()
         begin
@@ -11,7 +11,7 @@ class CharacterService
             characterList = []
         end
         file.close()
-
+   
         personagensArray = []
         characterList.each do |character|
             personagem = Personagem.new
@@ -19,7 +19,20 @@ class CharacterService
             personagem.classe = character["classe"]
             personagem.atributos = character["atributos"]
             personagem.ataques = character["ataques"]
+            personagem.tipo = character["tipo"]
             personagensArray.push(personagem)
+        end
+             
+    #receber uma string para ser usada cmo um filtro, se ela for null, nao fazer nada, e só
+    #fazer algo se ela for diferente de null
+    #valores possiveis da string que vai chegar pelos paametros de getAll():
+        #null
+        #'player'
+        #'enemy'
+        personagensArray.each_with_index do |personagem, index|
+            if personagem.tipo != filter
+                personagensArray.delete_at(index)
+            end
         end
         return personagensArray
     end
@@ -27,7 +40,7 @@ class CharacterService
     def getOne(nome)
         characterList = getAll()
         characterList.each do |character|
-            if character["nome"] == nome
+            if character.nome == nome
                 return character
             end 
         end
@@ -36,7 +49,6 @@ class CharacterService
     def create (character)
         characterList = getAll()
         characterList.push(character)
-        puts characterList.inspect
         saveJson(characterList)
     end
 
@@ -67,7 +79,7 @@ class CharacterService
         }
     end
 
-    def buildDefaultCharacter(nome, classe)
+    def buildDefaultCharacter(nome, classe, inimigo)
         atributos = defaultAtributos()
         ataques = defaultAtaques()
         personagem = Personagem.new
@@ -75,6 +87,7 @@ class CharacterService
         personagem.classe = classe
         personagem.atributos = atributos
         personagem.ataques = ataques
+        personagem.tipo = inimigo ? 'enemy' : 'player'
         return personagem
     end
 end
